@@ -1,0 +1,22 @@
+<div *ngFor="let employeeObject of employees"
+>
+  <h1>{{employeeObject.type}}</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>Անուն</th>
+      <th>Բացակա օրերի քանակ</th>
+      <th>Մաքուր Աշխատավարձ</th>
+      <th>Հարկ</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let empl of employeeObject.employees">
+      <th>{{empl.name}}</th>
+      <th>{{empl.sickDays}}</th>
+      <th>{{empl.amount}}</th>
+      <th>{{empl.totalTax}}</th>
+    </tr>
+    </tbody>
+  </table>
+</div>
