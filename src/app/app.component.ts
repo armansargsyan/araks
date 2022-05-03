@@ -7,11 +7,15 @@ import { CoreService } from "./core/services/core.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Արաքս թռչնաֆաբրիկայի առաքիչների աշխատավարձերի ավտոմատ հաշվարկ';
+  title = 'Արաքս թռչնաֆաբրիկայի առաքիչների աշխատավարձերի ավտոմատ հաշվարկ1';
   employees = [];
   constructor(private coreService: CoreService){
-    this.employees = this.coreService.allEmployees;
-    console.log(this.employees)
   }
 
+  getData(){
+    this.employees = this.coreService.generateData();
+  }
+  newData(){
+    this.employees = this.coreService.generateData();
+  }
 }
