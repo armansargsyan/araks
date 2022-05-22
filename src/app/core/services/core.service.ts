@@ -31,7 +31,7 @@ export class CoreService {
         ]
       },
       {
-        type: 'Կազմակերպությունը ի տրամադրում, ոչ ավտոմեքենա, ոչ խանութների ցանկ',
+        type: 'Կազմակերպությունը չի տրամադրում, ոչ ավտոմեքենա, ոչ խանութների ցանկ',
         employees: [
           new Employee('Աշխատող 11', SalaryTypeEnum.NO_ONE, getDaysCount(), getRandomPrices()),
           new Employee('Աշխատող 12', SalaryTypeEnum.NO_ONE, getDaysCount(), getRandomPrices()),
